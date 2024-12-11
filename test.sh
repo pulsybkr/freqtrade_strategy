@@ -3,6 +3,6 @@ freqtrade backtesting --config ./user_data/spot_config.json --strategy-list "NAS
 "SMAOffsetProtectOptV1" "SampleStrategy" "SmaRsiHopt" "TrailingBuyStrat" "slope_is_dope2" --timeframe 5m \
 --timerange=$(date -d '60 days ago' +%Y%m%d)-$(date +%Y%m%d)
 
-freqtrade backtesting --config ./user_data/spot_config.json --strategy "IchimokuHaulingV8a" --timeframe 5m 
+freqtrade backtesting --config ./user_data/m_config.json --strategy "NOTANKAI1" --timeframe 15m 
 
-freqtrade trade --config ./user_data/m_config.json --strategy "MacheteV8b" --timeframe 15m
+freqtrade trade --config ./user_data/v5_config.json --strategy "EI3v2_tag_cofi_green" 

@@ -8,6 +8,7 @@ from freqtrade.strategy.interface import IStrategy
 from typing import Dict, List
 from functools import reduce
 from pandas import DataFrame
+
 # --------------------------------
 import talib.abstract as ta
 import numpy as np
@@ -18,6 +19,9 @@ from datetime import datetime, timedelta
 from freqtrade.persistence import Trade
 from freqtrade.strategy import stoploss_from_open, merge_informative_pair, DecimalParameter, IntParameter, CategoricalParameter
 import technical.indicators as ftt
+
+import warnings
+warnings.filterwarnings('ignore')
 
 # @Rallipanos
 # @pluxury
